@@ -56,7 +56,6 @@ export default class NotificationHandler {
     const [subscription] = await topic.subscription('build-notifications').get()
 
     subscription.on('message', message => {
-      console.log('Received message and pushed to queue.')
       instance.queueMessage(message)
     })
 
