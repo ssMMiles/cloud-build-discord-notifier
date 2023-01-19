@@ -11,7 +11,7 @@ If you don't want to configure detailed permissions, the easiest preset roles ar
  - `roles/cloudbuild.builds.approver`
  - `roles/cloudbuild.builds.editor`
 
-**Before usage, you must also create a Pub/Sub topic called `cloud-builds`, and a subscription to that topic called `build-notifications`.
+**Before usage, you must also create a Pub/Sub topic called `cloud-builds`, and a subscription to that topic called `build-notifications`.**
 
 Configuration is passed through environment variables or a `.env` file, and requires the following keys:
 
