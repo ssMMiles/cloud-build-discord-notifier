@@ -56,7 +56,7 @@ async function main() {
 
   const hook = async (ctx: InteractionContext) => {
     if (ctx instanceof PingContext) return
-    // if (!ctx.guildId) return
+    if (!ctx.guildId) return
 
     ctx.decorate('db', db)
     ctx.decorate('cloudbuild', cloudbuild)
@@ -68,8 +68,7 @@ async function main() {
     publicKey: process.env.DISCORD_PUBKEY as string,
 
     hooks: {
-      'command.slash': [hook],
-      'component.button': [hook],
+      interaction: [hook],
     },
 
     syncMode: SyncMode.Enabled,

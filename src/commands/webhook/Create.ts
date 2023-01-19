@@ -4,7 +4,7 @@ export async function createWebhook(ctx: SlashCommandContext): Promise<void> {
   await ctx.defer()
 
   // @ts-ignore
-  const channelId = ctx.hasOption('channel') ? ctx.options.get('channel').value : ctx.channelId
+  const channelId = ctx.hasOption('channel') ? ctx.getChannelOption('channel').channel.id : ctx.channelId
 
   const existingWebhook = await ctx.db.get('SELECT id FROM webhooks WHERE channel_id = ?', channelId)
 

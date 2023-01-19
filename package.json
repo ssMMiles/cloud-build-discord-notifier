@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@discord-interactions/builders": "^0.3.9",
-    "@discord-interactions/core": "^0.3.9",
+    "@discord-interactions/core": "^0.3.10",
     "@google-cloud/cloudbuild": "^3.0.0",
     "@google-cloud/pubsub": "^2.18.4",
     "discord-api-types": "^0.37.28",
