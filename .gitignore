@@ -1,0 +1,10 @@
+# Deps
+node_modules
+
+# Build
+dist
+dts
+
+# Auth + Config
+gcloud-auth.json
+.env

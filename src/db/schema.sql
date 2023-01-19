@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS webhooks (
+  channel_id TEXT PRIMARY KEY NOT NULL,
+  id TEXT NOT NULL,
+  token TEXT NOT NULL,
+  active INTEGER NOT NULL DEFAULT 1,
+  description TEXT NOT NULL DEFAULT ''
+);
